@@ -1,0 +1,20 @@
+#!/bin/sh
+echo "  Docksmith Sample Application"
+echo ""
+echo "App Name: $APP_NAME"
+echo "Working Directory: $(pwd)"
+echo "Date: $(date)"
+echo ""
+echo "This application was built and is running"
+echo "entirely inside a Docksmith container."
+echo ""
+echo "Isolation test:"
+echo "  Hostname: $(hostname)"
+echo "  User: $(whoami)"
+echo "  PID: $$"
+echo ""
+echo "Environment variables from image:"
+env | grep APP_ | sort
+echo ""
+
+echo "  Container ran successfully!"

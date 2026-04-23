@@ -1,0 +1,8 @@
+*.o
+docksmith
+docksmith_c
+
+# Editor and OS noise
+.DS_Store
+*.swp
+*.swo

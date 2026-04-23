@@ -1,0 +1,7 @@
+FROM alpine:3.19
+WORKDIR /app
+COPY main.sh /app/main.sh
+RUN chmod +x /app/main.sh
+ENV GREETING=hello
+CMD ["/bin/sh", "/app/main.sh"]
+
